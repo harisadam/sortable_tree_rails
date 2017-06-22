@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     sortable_tree_rails (0.0.3)
+      jquery-ui-rails
       rails (>= 4.0)
 
 GEM

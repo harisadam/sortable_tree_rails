@@ -1,0 +1,19 @@
+<div class="sortable_tree_wrapper">
+  <ol class="sortable_tree" data-sortable-url="<%= options[:sort_url] %>">
+    <% items.each do |root, children| %>
+      <li id="<%= "cat_#{root.id}" %>">
+        <div class="item">
+          <h3 class="cell left">
+            <%= root.send(options[:name_method] || :name) %>
+          </h3>
+          <div class="cell right controls">
+            <% if options[:controls_partial] %>
+              <%= render options[:controls_partial], item: root %>
+            <% end %>
+          </div>
+        </div>
+        <%= sortable_tree_render_nested_groups(children, options.merge({list_tag: :ol, element_class: 'item'})) %>
+      </li>
+    <% end %>
+  </ol>
+</div>

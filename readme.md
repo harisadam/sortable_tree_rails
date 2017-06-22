@@ -70,8 +70,9 @@ Include js files in your assets file application.js:
 //= require jquery2
 //= require jquery_ujs
 
-//=require jquery-ui/sortable
-//=require jquery.mjs.nestedSortable.js
+//= require jquery-ui/sortable
+//= require jquery.mjs.nestedSortable.js
+//= require sortable_tree_rails/sortable_tree_rails
 
 ```
 
@@ -185,5 +186,3 @@ GUI for sortable tree with awesome_nested_set gem:
 
 # Credits
 * Some pieces of code was created by inspiration of gem [ActiveAdmin Sortable Tree](https://github.com/maxivak/activeadmin-sortable-tree/)
-
-

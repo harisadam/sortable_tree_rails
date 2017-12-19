@@ -1,4 +1,5 @@
-$('.sortable_tree').nestedSortable({
+$( document ).ready(function() {
+  $('.sortable_tree').nestedSortable({
       forceHelperSizeType: true,
       errorClass: 'cantdoit',
       disableNesting: 'cantdoit',
@@ -51,3 +52,4 @@ $('.sortable_tree').nestedSortable({
           //$(this).nestedSortable("enable");
       }
   }); // nested tree
+});
